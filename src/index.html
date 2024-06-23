@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Completion by Aravind Naik</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1f4037 0%, #99f2c8 100%);
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.2;
+        }
+        .background svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project is done by</h1>
+        <p>Aravind Naik</p>
+    </div>
+    <div class="background">
+        <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+            <g fill="none" stroke="white" stroke-width="2">
+                <!-- Example DevOps icons and shapes -->
+                <circle cx="150" cy="150" r="80" />
+                <rect x="400" y="100" width="200" height="100" rx="20" ry="20"/>
+                <path d="M200,300 Q400,100 600,300 T800,300" />
+                <polygon points="150,500 200,550 250,500" />
+                <line x1="100" y1="100" x2="200" y2="200" />
+            </g>
+        </svg>
+    </div>
+</body>
+</html>
