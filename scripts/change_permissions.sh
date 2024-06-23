@@ -1,1 +1,1 @@
-chmod +x scripts/*.sh
+chmod +x *.sh
