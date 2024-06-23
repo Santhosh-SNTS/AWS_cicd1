@@ -1,0 +1,33 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8  # Specify runtime if needed
+    commands:
+      - echo Installing Apache2...
+      - apt-get update -y
+      - apt-get install -y apache2
+
+  pre_build:
+    commands:
+      - echo Pre-build stage
+
+  build:
+    commands:
+      - echo Build stage
+      # Add your build commands here, if any
+      - echo "This is a sample build output" > output.txt
+      - apache2 -v
+
+  post_build:
+    commands:
+      - echo Post-build stage
+      # Add your post-build commands here, if any
+      - systemctl status apache2
+
+artifacts:
+  files:
+    - output.txt
+    - '**/*.log'
+  discard-paths: yes
