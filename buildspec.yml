@@ -24,7 +24,6 @@ phases:
     commands:
       - echo Post-build stage
       # Add your post-build commands here, if any
-      - systemctl status apache2
 
 artifacts:
   files:
