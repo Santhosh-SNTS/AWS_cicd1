@@ -5,9 +5,9 @@ phases:
     runtime-versions:
       python: 3.8  # Specify runtime if needed
     commands:
-      - echo Installing Apache2...
-      - apt-get update -y
-      - apt-get install -y apache2
+      - echo Installing httpd...
+      - yum update -y
+      - yum install -y httpd
 
   pre_build:
     commands:
@@ -18,7 +18,7 @@ phases:
       - echo Build stage
       # Add your build commands here, if any
       - echo "This is a sample build output" > output.txt
-      - apache2 -v
+      - httpd -v
 
   post_build:
     commands:
