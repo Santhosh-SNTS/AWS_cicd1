@@ -2,8 +2,8 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      python: 3.8  # Specify runtime if needed
+    # runtime-versions:
+      # python: 3.8  # Specify runtime if needed
     commands:
       - echo Installing httpd...
       - yum update -y
